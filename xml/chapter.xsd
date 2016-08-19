@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!--Root Definition-->
+    <xs:element name="chapter" type="chaptertype"/>
+
+    <!--Simple Type Definitions-->
+    <xs:simpleType name="stringtype">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="inttype">
+        <xs:restriction base="xs:positiveInteger"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="dectype">
+        <xs:restriction base="xs:decimal"/>
+    </xs:simpleType>
+
+    <!--Complex Type Definitions-->
+    <xs:complexType name="chaptertype">
+        <xs:sequence>
+            <xs:element name=""
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
+
+        <xs:sequence>
+            <xs:element name="orderperson" type="stringtype"/>
+            <xs:element name="shipto" type="shiptotype"/>
+            <xs:element name="item" maxOccurs="unbounded" type="itemtype"/>
+        </xs:sequence>
+        <xs:attribute name="orderid" type="orderidtype" use="required"/>
