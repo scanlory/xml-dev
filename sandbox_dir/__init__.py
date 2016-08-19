@@ -1,7 +1,8 @@
 #!usr/bin/env python
 # (c) R. D. Scanlon 2016
 
-"""Test Program
+"""
+Test Program
 
 .. moduleauthor:: R. D. Scanlon
 
