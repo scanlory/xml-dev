@@ -5,3 +5,4 @@ Hello, world!
 
 .. automodule:: sandbox_dir.sandbox
    :members:
+   :noindex:
